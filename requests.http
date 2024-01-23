@@ -1,0 +1,42 @@
+### List all products
+
+GET http://localhost:5000/onlineshop/products?productByPage=1
+### List product by ID
+GET http://localhost:5000/onlineshop/products/1
+
+### List of products with queries - Filtering
+
+GET http://localhost:5000/onlineshop/products?minPrice=0&maxPrice=10000&order=price
+### List of products with queries - Sorting
+
+GET http://localhost:5000/onlineshop/products?productByPage=0&order-=price
+
+### Added new product
+POST  http://localhost:5000/onlineshop/products
+content-type:application/json
+
+  {
+    "categoryId": 5,
+    "categoryName": "Zenith",
+    "productName": "Zenith Defy 21 El Primero",
+    "productDescription": "Mechanical movement with automatic winding.",
+    "productImage": "Professional watches_Zenith Defy 21 El Primero.jpg",
+    "price": 10250
+  }
+
+### Edit existing product
+  PUT  http://localhost:5000/onlineshop/products/5
+content-type:application/json
+
+  {
+    "categoryId": 5,
+    "categoryName": "Zenith",
+    "productName": "Zenith Defy 21 El Primero",
+    "productDescription": "Mechanical movement with automatic winding.",
+    "productImage": "Professional watches_Zenith Defy 21 El Primero.jpg",
+    "price": 725
+  }
+
+### Delete existing product
+  DELETE   http://localhost:5000/onlineshop/products/10
+
