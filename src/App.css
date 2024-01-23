@@ -1,0 +1,230 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Dosis', sans-serif;
+  font-size: 62, 5%;
+}
+
+body {
+  background-color: #8c8c8c;
+}
+
+.App {
+  text-align: center;
+  background-color: #8c8c8c;
+}
+
+.App-Hero-section-1 {
+  margin-top: 3%;
+}
+
+.App-Hero-section-1,
+.App-Hero-section-2 {
+  display: flex;
+}
+
+.App-column-2 h2 {
+  text-align: center;
+}
+
+.App-column-1 {
+  background-image: url('http://localhost:5000/Hero%20picture.jpg');
+  background-position: center -5%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  aspect-ratio: 2;
+}
+.App-column-3 {
+  background-image: url('http://localhost:5000/Hero picture 2.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  aspect-ratio: 2.1;
+  margin-bottom: 1px;
+}
+.App-column-1,
+.App-column-2,
+.App-column-3 {
+  flex: 50%;
+  text-align: justify;
+  padding: 0px 20px;
+  background-color: #8c8c8c;
+  color: white;
+}
+
+.AppBar_anhor {
+  color: white;
+  text-decoration: none;
+}
+.AppBar_anhor_black {
+  color: black;
+  text-decoration: none;
+}
+
+.AppBar_theme {
+  color: white;
+  text-decoration: none;
+}
+
+.App-header {
+  background-color: #ccd1d9;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-product {
+  display: flex;
+  margin: 20px;
+  margin-bottom: 100px;
+  padding: 10px;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.App-Card {
+  padding: 10px;
+  width: 25vw;
+  justify-content: center;
+}
+
+.App-Single-Card {
+  padding: 10px;
+  width: 25vw;
+}
+
+.App-Cart-img {
+  border: 1px solid beige;
+  border-radius: 20px;
+  aspect-ratio: 1;
+  min-width: 3rem;
+}
+
+.App-Single-Cart-img {
+  border: 1px solid beige;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  aspect-ratio: 1;
+}
+
+.App-price {
+  /* left: 0; */
+  /* margin-left: 250px; */
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.AppBar-button {
+  display: flex;
+  justify-content: center;
+}
+.NotFound {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.App-sorting-button {
+  margin-top: 80px;
+  color: red;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 1200px) {
+  .App-Hero-section-1,
+  .App-Hero-section-2 {
+    flex-direction: column;
+    min-width: 300px;
+  }
+  .App-column-1,
+  .App-column-2,
+  .App-column-3 {
+    border: 2px solid black;
+  }
+  .AppBar_anhor {
+    display: flex;
+    text-decoration: solid;
+    font-size: 1.2rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .AppBar_anhor_black {
+    display: flex;
+    justify-content: center;
+  }
+  .App-product {
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    /* position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); */
+  }
+  .App-price {
+    font-size: 0.7rem;
+    padding: 2px;
+    justify-content: flex-end;
+  }
+}
+@media (max-width: 800px) {
+  .App-CartContent {
+    margin: 0;
+    padding: 0;
+  }
+  .App-product {
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    /* position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); */
+  }
+  .App-price {
+    font-size: 0.6rem;
+    padding: 1px;
+  }
+  .img {
+    height: 50vh;
+    width: 70vw;
+    margin: 15px;
+    padding: 15px;
+  }
+  .App-NotFoundPage {
+    margin: auto;
+  }
+  .App {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+}
+@media (max-width: 400px) {
+  .img {
+    height: 15rem;
+    width: 15rem;
+    margin: 5px;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+  }
+  .App {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+}
